@@ -14,6 +14,7 @@ html {
 
 body {
     width: 100%;
+    font-family: "Open Sans", sans-serif;
 
     &::-webkit-scrollbar {
         display: none;
@@ -22,8 +23,12 @@ body {
 
 nav {
     padding-top: 32px;
+
     li + li {
         margin-left: 8px;
+    }
+    li a:hover {
+        font-weight: bold;
     }
 }
 
@@ -54,6 +59,24 @@ button {
 a {
     text-decoration: none;
     color: #000;
+    transition: 1.5s ease;
+}
+
+h1 {
+    font-size: 49px;
+    line-height: 56px;
+}
+
+p {
+    font-size: 14px;
+    line-height: 28px;
+    color: #7d7987;
+}
+
+footer {
+    a {
+        font-weight: bold;
+    }
 }
 
 .p {
@@ -64,8 +87,8 @@ a {
     margin-top: 24px;
 }
 
-.ml{
-    margin-left: 8px;
+.mr {
+    margin-right: 8px;
 }
 
 .flex-space {
@@ -78,6 +101,10 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.highlight-text {
+    font-family: "Mulish", sans-serif;
 }
 
 @media screen and (max-width: 960px) {
