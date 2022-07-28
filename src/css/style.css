@@ -1,0 +1,152 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  cursor: default;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(82.08%, rgba(227, 255, 248, 0)), to(rgba(227, 255, 248, 0.38)));
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  padding-top: 32px;
+}
+
+nav li + li {
+  margin-left: 8px;
+}
+
+nav li a:hover {
+  font-weight: bold;
+}
+
+li {
+  list-style: none;
+  opacity: .5;
+}
+
+span {
+  color: #89c5cc;
+}
+
+button {
+  background-color: #69b99d;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 5px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+button:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  background-color: #21e6a1;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: 1.5s ease;
+  transition: 1.5s ease;
+}
+
+h1 {
+  font-size: 49px;
+  line-height: 56px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 28px;
+  color: #7d7987;
+}
+
+footer a {
+  font-weight: bold;
+}
+
+.page {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.p {
+  padding: 8px 16px;
+}
+
+.mt {
+  margin-top: 24px;
+}
+
+.mr {
+  margin-right: 8px;
+}
+
+.flex-space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.highlight-text {
+  font-family: "Mulish", sans-serif;
+}
+
+#balls {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 960px) {
+  .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #balls {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

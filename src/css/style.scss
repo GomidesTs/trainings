@@ -119,6 +119,8 @@ footer {
     bottom: 0;
 }
 
+@import "partials/animations";
+
 @media screen and (max-width: 960px) {
     .flex {
         flex-direction: column;
